@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-12 py-lg-0 py-3 order-sm-1">
+        <h1 class="display-4">Welcome To<br><span>QuestionGenerator</span></h1>
+        <p class="my-lg-2 my-3">Upload any content of your choice to unravel the possible questions from it. What are you waiting for, give it a try!!!</p>
+        <a class="btn btn-primary my-lg-3 my-3" href="{{url_for('main.upload')}}">Get Started!</a>
+    </div>
+    <div class="col-lg-6 order-2">
+        <img src="/static/images/Home1.PNG" class="img-fluid" alt="Home">
+    </div>
+</div>
+{% endblock %}

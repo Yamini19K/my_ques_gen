@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+{% block content %}
+    {% if my_output %}
+        <div class="scroll-bg">
+            <div class="scroll-div">
+                <div class="scroll-object">
+                    {{ my_output }}
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a class="btn btn-dark" href="{{ url_for('main.download') }}">Click here to Download the Questions!</a>
+            <a class="btn btn-primary" href="{{ url_for('main.upload') }}">Upload Again!</a>
+        </div>
+    {% endif %}
+{% endblock %}
